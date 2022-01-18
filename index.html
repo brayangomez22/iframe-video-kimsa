@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.video {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.video__content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		video {
+			position: absolute;
+			right: 0;
+			top: 0;
+			left: 0;
+			max-width: 100%;
+			height: auto;
+			max-height: 100%;
+			background-size: 100%;
+			background-position: center;
+			background-size: cover;
+			margin: auto;
+			object-fit: contain;
+		}
+
+		@media (max-width: 1024px) {
+			.video {
+				height: 500px;
+			}
+		}
+
+		@media (max-width: 700px) {
+			.video {
+				margin-top: 75px;
+			}
+		}
+
+		@media (max-width: 425px) {
+			.video {
+				height: 250px;
+			}
+		}
+	</style>
+	<body>
+		<section class="video" id="home">
+			<div class="video__content">
+				<video class="videoKimsa" poster="https://res.cloudinary.com/dzdphzmx8/image/upload/v1640026994/kimsa/general/thumbnail_kiqyb0.png" autoplay loop muted>
+					<source src="https://res.cloudinary.com/dzdphzmx8/video/upload/v1640028180/kimsa/general/videoKimsa_cisfhq.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</section>
+	</body>
+</html>

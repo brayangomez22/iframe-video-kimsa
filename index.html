@@ -7,6 +7,28 @@
 		<title>Document</title>
 	</head>
 	<style>
+		html,
+		body {
+			overflow-x: hidden;
+		}
+
+		html {
+			line-height: 1.15;
+			-webkit-text-size-adjust: 100%;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			overflow-x: hidden;
+			background: #fff;
+			transition: all 500ms;
+			will-change: background;
+		}
+
+		main {
+			position: relative;
+		}
+
 		.video {
 			position: relative;
 			width: 100vw;
@@ -54,12 +76,20 @@
 		}
 	</style>
 	<body>
-		<section class="video" id="home">
-			<div class="video__content">
-				<video class="videoKimsa" poster="https://res.cloudinary.com/dzdphzmx8/image/upload/v1640026994/kimsa/general/thumbnail_kiqyb0.png" autoplay loop muted>
-					<source src="https://res.cloudinary.com/dzdphzmx8/video/upload/v1640028180/kimsa/general/videoKimsa_cisfhq.mp4" type="video/mp4" />
-				</video>
-			</div>
-		</section>
+		<main id="main">
+			<section class="video" id="home">
+				<div class="video__content">
+					<video
+						class="videoKimsa"
+						poster="https://res.cloudinary.com/dzdphzmx8/image/upload/v1640026994/kimsa/general/thumbnail_kiqyb0.png"
+						autoplay
+						loop
+						muted
+					>
+						<source src="https://res.cloudinary.com/dzdphzmx8/video/upload/v1640028180/kimsa/general/videoKimsa_cisfhq.mp4" type="video/mp4" />
+					</video>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
